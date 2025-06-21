@@ -1,0 +1,38 @@
+.minimal-header-navbar {
+    padding: 12px 0;
+    border-bottom: none;
+}
+
+.minimal-nav-link {
+    color: #CCD6F6 !important;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.minimal-nav-link:hover {
+    color: #64FFDA !important;
+}
+
+.nav-item-number {
+    color: #64FFDA;
+    margin-right: 0.1em;
+    font-weight: 700;
+}
+
+.button-icon {
+    cursor: pointer;
+}
+
+.button-icon:hover .icon-language {
+    color: #64FFDA;
+}
+
+.icon-language {
+    font-size: 1.5rem;
+    color: #CCD6F6;
+}

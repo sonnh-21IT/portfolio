@@ -1,0 +1,13 @@
+.loading-spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A192F;
+    z-index: 9999;
+    color: #64FFDA;
+}

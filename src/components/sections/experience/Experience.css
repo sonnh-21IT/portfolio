@@ -1,0 +1,141 @@
+.job-title {
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.job-title span:last-child {
+    font-weight: 500;
+    color: #64FFDA;
+}
+
+.worked-duration {
+    margin-bottom: 0;
+}
+
+.worked-duration span:first-child {
+    font-weight: normal;
+}
+
+.worked-duration span:last-child {
+    font-weight: bold;
+    color: #64FFDA;
+}
+
+.worked-duration {
+    font-size: 0.9em;
+    color: #8892B0;
+    margin-bottom: 20px;
+}
+
+.worked-responsibilities {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-tabbar {
+    display: flex;
+    margin-bottom: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    color: #8892B0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-bottom: 2px solid transparent;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+
+.tab-button:hover {
+    opacity: 0.8;
+    color: #64FFDA;
+}
+
+.tab-active {
+    border-bottom: 2px solid #64FFDA;
+    color: #64FFDA;
+}
+
+
+@media (max-width: 1024px) {
+
+    .job-title,
+    .worked-duration {
+        font-size: 1em;
+    }
+
+    .tab-button {
+        font-size: 0.95em;
+        padding: 9px 18px;
+        margin-right: 8px;
+    }
+
+    .worked-responsibilities li {
+        font-size: 0.88em;
+    }
+}
+
+@media (max-width: 768px) {
+    .job-title {
+        font-size: 0.85em;
+    }
+
+    .worked-duration span:last-child {
+        font-size: 0.85em;
+    }
+
+    .worked-duration {
+        font-size: 0.85em;
+    }
+
+    .worked-responsibilities li {
+        font-size: 0.85em;
+        padding-left: 18px;
+    }
+
+    .worked-responsibilities li::before {
+        top: 5px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .experience-tabbar {
+        justify-content: flex-start;
+    }
+
+    .tab-button {
+        font-size: 0.8em;
+        padding: 2px 6px;
+        margin-right: 5px;
+    }
+
+    .job-entry {
+        padding: 0;
+    }
+
+    .job-title {
+        font-size: 0.8em;
+    }
+
+    .worked-duration span:last-child {
+        font-size: 0.8em;
+    }
+
+    .worked-duration {
+        font-size: 0.8em;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,93 @@
+.email-sidebar {
+    position: fixed;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #64FFDA;
+    z-index: 100;
+}
+
+.email-link {
+    text-decoration: none;
+    color: #CCD6F6;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.email-line {
+    width: 1px;
+    height: 90px;
+    background-color: #CCD6F6;
+}
+
+.email-link:hover {
+    color: #64FFDA;
+}
+
+.email-link:hover .email-line {
+    background-color: #64FFDA;
+}
+
+.email-sidebar.left {
+    top: 0;
+    left: 40px;
+    padding-top: 100px;
+}
+
+.email-sidebar.left .email-link {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: translateX(-100%) rotateZ(180deg);
+    transform-origin: right center;
+}
+
+.email-sidebar.left .email-line {
+    margin-bottom: 24px;
+    margin-left: 7px;
+}
+
+
+.email-sidebar.right {
+    bottom: 0;
+    right: 40px;
+}
+
+.email-sidebar.right .email-link {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.email-sidebar.right .email-line {
+    margin-right: 7px;
+    margin-top: 24px;
+}
+
+@media (max-width: 1024px) {
+    .email-sidebar.left {
+        left: 20px;
+    }
+
+    .email-sidebar.right {
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .email-sidebar.left {
+        left: 20px;
+    }
+
+    .email-sidebar.right {
+        right: 10px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .email-sidebar.left,
+    .email-sidebar.right {
+        display: none;
+    }
+}

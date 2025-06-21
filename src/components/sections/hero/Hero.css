@@ -1,0 +1,149 @@
+.hero-section {
+    color: #c9d1d9;
+    padding: 48px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.greeting {
+    color: #64FFDA;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.name-and-title-group {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.name {
+    color: #CCD6F6;
+    font-size: 3.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.title {
+    color: #8892B0;
+    font-size: 1.5em;
+    margin-top: -16px;
+    margin-bottom: 0;
+}
+
+.description {
+    color: #CCD6F6;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 0;
+}
+
+.stack-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.stack-container p {
+    color: #CCD6F6;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.stack-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px 24px;
+}
+
+.certifications-list {
+    grid-template-columns: 1fr;
+}
+
+.stack-list li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition:
+        color 0.3s ease-in-out,
+        white-space 0.3s ease-in-out,
+        overflow 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.stack-list li:hover {
+    color: #64FFDA;
+    background-color: #0A192F;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    width: max-content;
+    z-index: 10;
+}
+
+.stack-list li a {
+    text-decoration: none;
+    color: #8892B0;
+}
+
+.stack-list li:hover a {
+    color: #64FFDA;
+}
+
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 32px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .name-and-title-group {
+        margin: 14px 0;
+    }
+
+    .title {
+        margin-top: -12px;
+    }
+
+    .hero-section {
+        padding: 16px 0;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 490px) {
+    .title {
+        margin-top: -10px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+}
